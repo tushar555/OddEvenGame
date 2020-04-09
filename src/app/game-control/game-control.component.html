@@ -1,0 +1,13 @@
+
+    
+              <h3 *ngIf="isstart===false && isstop===false">Game Not Started Yet...</h3>
+              <h3 style="color:green;" *ngIf="isstart">Game Started..</h3>
+              <h3 style="color:#8C3E4D;" *ngIf="isstop">Game Stopped..</h3>
+                  <button class="startbutton" (click)="startGame()">
+                      Start Game
+                    </button>  
+                    <button  class="stopbutton" (click)="stopGame()" >
+                       Stop Game 
+                    </button>   
+             
+      

@@ -1,0 +1,16 @@
+<div>
+        <br><br>
+    <button class="button" (click)="showEven()">
+       <b> Show Even Numbers </b>
+    
+      </button>
+
+      <div *ngIf='showE'>
+          <h3>Showing Even Numbers from Even Component</h3>
+          <p *ngIf="evenNumbers?.length<=0">Counter not reached to Even Numbers yet..</p>
+          <div *ngFor="let index of evenNumbers">
+             <p *ngIf="evenNumbers.length>0"><b>{{index}}</b></p>
+            
+          </div> 
+         </div>  
+</div>

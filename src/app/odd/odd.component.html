@@ -1,0 +1,16 @@
+
+  <div>
+    <br><br>
+      <button class="button" (click)="showOdd()">
+        <b>Show Odd Numbers</b>
+      </button>  
+      
+      <div *ngIf='showO'>  
+          <h3>Showing Odd Numbers From Odd Component</h3>
+          <p class="showDivcss" *ngIf="oddNumbers?.length<=0">Counter not reached to Odd Numbers yet..</p>
+          <div class="showDivcss" *ngFor="let index of oddNumbers">
+             <p *ngIf="oddNumbers?.length>0"><b>{{index}}</b></p>
+           
+           </div>  
+          </div> 
+  </div>
